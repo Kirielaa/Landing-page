@@ -2,6 +2,7 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0;
+    padding: 0;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -36,16 +37,18 @@ a:hover {
 
 .header-top {
     display: flex;
-    justify-content: center;
-    column-gap: 600px;
+    justify-content: space-between;
     align-items: center; 
     flex-wrap: wrap;
-    padding-bottom: 100px;
+    padding-bottom: 80px;
+    margin-top: 15px;
+    column-gap: 620px;
 }
 
-.header-logo {
-    font-size: 24px;
-    color: #F9FAF8;
+#logo {
+    width: 50px;
+    height: 50px;
+    border: none;
 }
 
 .links  {
@@ -57,7 +60,6 @@ a:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
     gap: 100px;
 }
 
@@ -79,24 +81,41 @@ h1 {
 }
 
 .placeholder {
-    padding: 100px;
-    background-color: grey;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(https://preview.redd.it/3wijxmj4jvt51.png?auto=webp&s=f8f1e49a6c3696cdefb279f4d9e7bf0a255b8199);
+    padding: 150px 120px;
 }
 
 .signup {
     background-color: #3882F6;
     color: white;
+    font-size: 1rem;
     border-radius: 10px;
-    padding: 8px 25px;
+    height: 40px;
+    width: 120px;
     font-weight: bold;
-    margin-top: 15px;
-    border: 1px solid #3882F6;
+    border: 1px solid #383838;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.signup a {
+    display: block;
+    width: 100%;
+    line-height: 40px;
+    text-decoration: none;
+}
+
+
+
+.signup:hover {
+    background-color: #2655a1
 }
 
 .illustration-container {
     display: flex;
     justify-content: center;
-    align-items: center;
     gap: 40px;
     flex-wrap: wrap;
 }
@@ -105,12 +124,11 @@ h1 {
     width: 200px;
 }
 
-.illustration div {
-    padding: 80px 60px;
+img {
     border: 4px solid #3882F6;
-    text-align: center;
+    height: 200px;
+    width: 200px;
     border-radius: 15px;
-    margin: 0;
 }
 
 .illustration p {
@@ -164,24 +182,32 @@ h1 {
 }
 
 .call {
+    width: 70%;
+    height: 50%;
     background-color: #3882F6;
-    padding: 30px 150px;
     display: flex;
     border-radius: 10px;
     gap: 50px;
     justify-content: center;
     align-items: center;
+    padding: 10px;
 }
 
 .call-signup {
     background-color: #3882F6;
     color: white;
+    font-size: 1rem;
     border-radius: 10px;
     font-weight: bold;
     border: 2px solid white;
     margin: 15px 0;
-    padding: 10px 25px;
+    padding: 0.5rem 2rem;
     font-size: 15px;
+    cursor: pointer;
+}
+
+.call-signup:hover {
+    background-color: #2655a1
 }
 
 #call-text p {
