@@ -9,7 +9,6 @@ body {
 .main-container {
     display: flex;
     flex-direction: column;
-    
 }
 
 ul {
@@ -42,7 +41,7 @@ a:hover {
     flex-wrap: wrap;
     padding-bottom: 80px;
     margin-top: 15px;
-    column-gap: 620px;
+    column-gap: 530px;
 }
 
 #logo {
@@ -200,10 +199,18 @@ img {
     border-radius: 10px;
     font-weight: bold;
     border: 2px solid white;
-    margin: 15px 0;
-    padding: 0.5rem 2rem;
-    font-size: 15px;
+    height: 40px;
+    width: 110px;
+    font-size: 1rem;
     cursor: pointer;
+}
+
+.call-signup a {
+    text-align: center;
+    display: block;
+    width: 100%;
+    line-height: 38px;
+    text-decoration: none;
 }
 
 .call-signup:hover {
