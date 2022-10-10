@@ -36,12 +36,18 @@ a:hover {
 
 .header-top {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center; 
     flex-wrap: wrap;
-    padding-bottom: 80px;
     margin-top: 15px;
     column-gap: 530px;
+    /*
+    background-color: #1F2937;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    */
+    
 }
 
 #logo {
@@ -56,6 +62,8 @@ a:hover {
 }
 
 .header-bottom {
+   /* padding-top: 200px;  Only use if header is fixed*/
+    margin-top: 60px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
